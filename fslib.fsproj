@@ -5,7 +5,6 @@
     <WarnOn>3390;$(WarnOn)</WarnOn>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="NativeCallable.fs" />
     <Compile Include="Library.fs" />
   </ItemGroup>
   <ItemGroup>
