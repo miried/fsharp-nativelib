@@ -1,0 +1,6 @@
+Basic code for F# library which exports two functions "add" and "write_line".
+
+Compile with
+
+dotnet publish /p:NativeLib=Shared /p:SelfContained=true -r osx-x64 -c release
+
