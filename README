@@ -1,6 +1,11 @@
 Basic code for F# library which exports two functions "add" and "write_line".
+Based on the idea of https://secanablog.wordpress.com/2020/02/01/writing-a-native-library-in-f-which-can-be-called-from-c/ but updated to NativeAOT.
+
 
 Compile with
 
-dotnet publish /p:NativeLib=Shared /p:SelfContained=true -r osx-x64 -c release
+dotnet publish /p:NativeLib=Shared /p:SelfContained=true -r [platform] -c release
 
+where [platform] is win-x64, linux-x64, or osx-x64.
+
+To test the library, compile the example C code in main.c
